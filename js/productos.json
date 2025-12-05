@@ -12,7 +12,7 @@
     "nombre": "AMD Ryzen 7 7800X3D",
     "categoria": "procesador",
     "precio": 650000,
-    "imagen": "./images/componentes/amd_ryzen_7_7800x3d.jpg",
+    "imagen": "images/componentes/amd_ryzen_7_7800x3d.jpg",
     "specs": { "socket": "AM5", "graficos": true, "consumo_watts": 120 }
   },
   {
