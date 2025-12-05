@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrito de Compras - HardTec</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/checkout.js"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="index.html" class="logo">HardTec 🚀</a>
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <div class="dropdown-container">
+                    <a href="catalogo.html" style="cursor: pointer;">Productos ▾</a>
+                    <div class="dropdown-menu">
+                        <a href="catalogo.html?filtro=todos">Ver Todo</a>
+                        <a href="catalogo.html?filtro=procesador">Procesadores</a>
+                        <a href="catalogo.html?filtro=placa_base">Mothers</a>
+                        <a href="catalogo.html?filtro=tarjeta_grafica">Video</a>
+                        <a href="catalogo.html?filtro=memoria_ram">RAM</a>
+                        <a href="catalogo.html?filtro=almacenamiento">Almacenamiento</a>
+                        <a href="catalogo.html?filtro=notebook">Notebooks</a>
+                    </div>
+                </div>
+                <a href="armador.html" class="highlight">🛠️ Armá tu PC</a>
+                <a href="checkout.html" class="cart-icon active">🛒 <span id="cart-count">0</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="checkout-container">
+        <h2>Tu Carrito de Compras</h2>
+        
+        <div class="checkout-grid">
+            
+            <div class="cart-items">
+                <table class="cart-table">
+                    <thead>
+                        <tr>
+                            <th width="100">Imagen</th>
+                            <th>Producto</th>
+                            <th>Precio Unitario</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla-carrito">
+                        </tbody>
+                </table>
+                <div id="mensaje-vacio" style="display:none; padding:40px; text-align:center;">
+                    <h3>Tu carrito está vacío 😢</h3>
+                    <a href="catalogo.html" class="button">Ir a la Tienda</a>
+                </div>
+            </div>
+
+            <aside class="cart-summary">
+                <h3>Resumen</h3>
+                
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="subtotal-precio">$0</span>
+                </div>
+                <div class="summary-row">
+                    <span>Envío</span>
+                    <span style="color:green;">Gratis 🚚</span>
+                </div>
+                
+                <div class="summary-total">
+                    <span>TOTAL</span>
+                    <span id="total-compra">$0</span>
+                </div>
+
+                <hr>
+
+                <button class="button button-block" id="btn-whatsapp">
+                    📱 Finalizar por WhatsApp
+                </button>
+                <button class="button button-outline button-block" onclick="window.print()">
+                    🖨️ Imprimir Presupuesto
+                </button>
+                <button class="button button-clear button-block button-small" onclick="vaciarCarrito()" style="color:red; margin-top:10px;">
+                    Vaciar Carrito
+                </button>
+            </aside>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Sobre HardTec</h4>
+                <p>Expertos en Hardware Gaming.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Ayuda</h4>
+                <ul>
+                    <li><a href="#">Envíos</a></li>
+                    <li><a href="#">Pagos</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p>📞 0810-555-HARD</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 HardTec Store.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

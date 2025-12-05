@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>HardTec Store - Inicio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/index.js"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="index.html" class="logo">
+                <img src="images/Home/Gemini_Generated_Image_13h98u13h98u13h9.png" alt="HardTec Logo" class="logo-img">
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html" class="active">Inicio</a>
+                <div class="dropdown-container">
+                    <a href="catalogo.html" style="cursor: pointer;">Productos ▾</a>
+                    <div class="dropdown-menu">
+                        <a href="catalogo.html?filtro=todos">Ver Todo</a>
+                        <a href="catalogo.html?filtro=procesador">Procesadores</a>
+                        <a href="catalogo.html?filtro=placa_base">Mothers</a>
+                        <a href="catalogo.html?filtro=tarjeta_grafica">Video</a>
+                        <a href="catalogo.html?filtro=memoria_ram">RAM</a>
+                        <a href="catalogo.html?filtro=almacenamiento">Almacenamiento</a>
+                        <a href="catalogo.html?filtro=notebook">Notebooks</a>
+                    </div>
+                </div>
+                <a href="armador.html" class="highlight">🛠️ Armá tu PC</a>
+                <a href="checkout.html" class="cart-icon">🛒 <span id="cart-count">0</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <video autoplay muted loop id="video-background">
+            <source src="./images/Home/Video_Generation_With_Specific_Edits.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div> <div class="hero-content">
+            <h2>HARDWARE GAMING</h2>
+            <p>Los mejores precios del país en un solo lugar.</p>
+            <a href="catalogo.html" class="button button-large">Ver Catálogo Completo</a>
+        </div>
+    </header>
+
+    <main>
+        <h3 style="text-align: center; margin-top: 40px;">🔥 Ofertas Imperdibles</h3>
+        <div class="container" id="ofertas-container"></div>
+        
+        <section class="categorias-section">
+            <h3>Explorá nuestras categorías</h3>
+            <div class="layout-hibrido">
+                <div class="columna-fija">
+                    <a href="catalogo.html?filtro=procesador" class="cat-card card-gigante">
+                        <img src="https://imagenes.compragamer.com/home_carrusel_agrupadores/Principal_2_5f5a16b3-1c23-46c5-8ac2-928fbcd14fad.jpg" alt="Procesadores">
+                        <div class="cat-info"><span>PROCESADORES</span></div>
+                    </a>
+                </div>
+                <div class="columna-slider">
+                    <a href="catalogo.html?filtro=notebook" class="cat-card">
+                        <img src="https://imagenes.compragamer.com/home_carrusel_agrupadores/Secundaria_11_ba608bb4-e8e5-4bb8-8ac6-54048caa097e.jpg" alt="Notebooks">
+                        <div class="cat-info"><span>NOTEBOOKS</span></div>
+                    </a>
+                    <a href="catalogo.html?filtro=tarjeta_grafica" class="cat-card">
+                        <img src="https://imagenes.compragamer.com/home_carrusel_agrupadores/Secundaria_8_c03cb82a-e2fc-4fcd-b2b8-2731fdebe5b6.jpg" alt="Video">
+                        <div class="cat-info"><span>VIDEO</span></div>
+                    </a>
+                    <a href="catalogo.html?filtro=monitor" class="cat-card">
+                        <img src="https://imagenes.compragamer.com/home_carrusel_agrupadores/Secundaria_14_07276f64-40ff-47a9-af83-bcbbe745bb93.jpg" alt="Monitores">
+                        <div class="cat-info"><span>MONITORES</span></div>
+                    </a>
+                    <a href="catalogo.html?filtro=gabinete" class="cat-card">
+                        <img src="https://imagenes.compragamer.com/home_carrusel_agrupadores/Secundaria_18_c1f4ebcb-cfef-42fb-8380-238ed36713ec.jpg" alt="Gabinetes">
+                        <div class="cat-info"><span>GABINETES</span></div>
+                    </a>
+                    <a href="catalogo.html?filtro=periferico" class="cat-card">
+                        <img src="https://imagenes.compragamer.com/home_carrusel_agrupadores/Secundaria_1_7a89d823-0c58-4caa-ac13-8e8c4aae3952.jpg" alt="Periféricos">
+                        <div class="cat-info"><span>PERIFÉRICOS</span></div>
+                    </a>
+                    <a href="catalogo.html?filtro=almacenamiento" class="cat-card">
+                        <img src="https://imagenes.compragamer.com/home_carrusel_agrupadores/Secundaria_3_afa5b0be-db21-49e6-8b4d-b40798b249cc.jpg" alt="Almacenamiento">
+                        <div class="cat-info"><span>ALMACENAMIENTO</span></div>
+                    </a>
+                    <a href="catalogo.html?filtro=memoria_ram" class="cat-card">
+                        <img src="https://imagenes.compragamer.com/home_carrusel_agrupadores/Secundaria_5_9b05467c-e016-411f-981a-79751019f62c.jpg" alt="Memorias">
+                        <div class="cat-info"><span>MEMORIAS</span></div>
+                    </a>
+                    <a href="catalogo.html?filtro=fuente_poder" class="cat-card">
+                        <img src="https://imagenes.compragamer.com/home_carrusel_agrupadores/Secundaria_9_396a870d-1002-498d-b4b8-60a1d96dad2d.jpg" alt="Fuentes">
+                        <div class="cat-info"><span>FUENTES</span></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="banner-armador" style="margin-top: 60px;">
+            <div class="armador-info">
+                <h3>¿Necesitas una PC completa?</h3>
+                <p>No te compliques comprando suelto. Usa nuestro armador inteligente.</p>
+                <a href="armador.html" class="button button-outline">Ir al Armador de PC ➡</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Sobre HardTec</h4>
+                <p>Líderes en hardware y armado de PCs.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Ayuda</h4>
+                <ul><li><a href="#">Envíos</a></li><li><a href="#">Garantía</a></li></ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p>📞 0810-555-HARD</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 HardTec Store.</p>
+        </div>
+    </footer>
+</body>
+</html>

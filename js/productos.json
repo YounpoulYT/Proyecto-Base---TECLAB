@@ -1,0 +1,949 @@
+[
+  {
+    "id": 1,
+    "nombre": "AMD Ryzen 5 5600X",
+    "categoria": "procesador",
+    "precio": 230000,
+    "imagen": "images/componentes/amd_ryzen_5_5600x.jpg",
+    "specs": { "socket": "AM4", "graficos": false, "consumo_watts": 65 }
+  },
+  {
+    "id": 2,
+    "nombre": "AMD Ryzen 7 7800X3D",
+    "categoria": "procesador",
+    "precio": 650000,
+    "imagen": "images/componentes/amd_ryzen_7_7800x3d.jpg",
+    "specs": { "socket": "AM5", "graficos": true, "consumo_watts": 120 }
+  },
+  {
+    "id": 3,
+    "nombre": "Intel Core i5 12400F",
+    "categoria": "procesador",
+    "precio": 190000,
+    "imagen": "images/componentes/intel_core_i5_12400f.jpg",
+    "specs": { "socket": "LGA1700", "graficos": false, "consumo_watts": 65 }
+  },
+  {
+    "id": 4,
+    "nombre": "ASUS ROG STRIX B550-F GAMING WIFI II",
+    "categoria": "placa_base",
+    "precio": 210000,
+    "imagen": "images/componentes/asus_rog_strix_b550_f_gaming.jpg",
+    "specs": {
+      "socket": "AM4",
+      "tipo_memoria": "DDR4",
+      "formato": "ATX",
+      "cant_slots_m2": 2,
+      "cant_puertos_sata": 6,
+      "cant_slots_ram": 4
+    }
+  },
+  {
+    "id": 5,
+    "nombre": "MSI MAG B650 TOMAHAWK WIFI",
+    "categoria": "placa_base",
+    "precio": 320000,
+    "imagen": "images/componentes/msi_mag_b650_tomahawk_wifi.jpg",
+    "specs": {
+      "socket": "AM5",
+      "tipo_memoria": "DDR5",
+      "formato": "ATX",
+      "cant_slots_m2": 3,
+      "cant_puertos_sata": 6,
+      "cant_slots_ram": 4
+    }
+  },
+  {
+    "id": 6,
+    "nombre": "Gigabyte B760M DS3H AX DDR4",
+    "categoria": "placa_base",
+    "precio": 185000,
+
+    "imagen": "images/componentes/gigabyte_b760m_ds3h_ax_ddr4.jpg",
+    "specs": {
+      "socket": "LGA1700",
+      "tipo_memoria": "DDR4",
+      "formato": "mATX",
+      "cant_slots_m2": 2,
+      "cant_puertos_sata": 4,
+      "cant_slots_ram": 4
+    }
+  },
+  {
+    "id": 7,
+    "nombre": "Corsair Vengeance LPX 16GB (2x8GB) 3200MHz Black",
+    "categoria": "memoria_ram",
+    "precio": 65000,
+
+    "imagen": "images/componentes/corsair_vengeance_lpx_ddr4_16gb.jpg",
+    "specs": {
+      "tipo": "DDR4",
+      "capacidad_gb": 16,
+      "velocidad_mhz": 3200,
+      "cantidad_modulos": 2
+    }
+  },
+  {
+    "id": 8,
+    "nombre": "Kingston Fury Beast 32GB (2x16GB) 6000MHz Black",
+    "categoria": "memoria_ram",
+    "precio": 140000,
+    "imagen": "images/componentes/kingston_fury_beast_ddr5_32gb.jpg",
+    "specs": {
+      "tipo": "DDR5",
+      "capacidad_gb": 32,
+      "velocidad_mhz": 6000,
+      "cantidad_modulos": 2
+    }
+  },
+  {
+    "id": 9,
+    "nombre": "ASUS Dual GeForce RTX 4060 OC 8GB White",
+    "categoria": "tarjeta_grafica",
+    "precio": 450000,
+    "imagen": "images/componentes/asus_dual_rtx_4060_oc_white.jpg",
+    "specs": {
+      "marca": "NVIDIA",
+      "vram_gb": 8,
+      "consumo_watts": 115,
+      "largo_mm": 227
+    }
+  },
+  {
+    "id": 10,
+    "nombre": "XFX Speedster QICK 319 Radeon RX 7800 XT 16GB",
+    "categoria": "tarjeta_grafica",
+    "precio": 780000,
+    "imagen": "images/componentes/xfx_speedster_qick_319_rx_7800_xt.jpg",
+    "specs": {
+      "marca": "AMD",
+      "vram_gb": 16,
+      "consumo_watts": 263,
+      "largo_mm": 335
+    }
+  },
+  {
+    "id": 11,
+    "nombre": "Kingston NV2 1TB NVMe Gen4",
+    "categoria": "almacenamiento",
+    "precio": 85000,
+
+    "imagen": "images/componentes/ssd_kingston_1tb.jpg",
+    "specs": {
+      "formato": "M.2",
+      "protocolo": "NVMe",
+      "capacidad": "1TB",
+      "consumo_watts": 5
+    }
+  },
+  {
+    "id": 12,
+    "nombre": "WD Black SN850X 2TB NVMe Gen4",
+    "categoria": "almacenamiento",
+    "precio": 210000,
+    "imagen": "images/componentes/ssd_wd_black_m.2_2tb.jpg",
+    "specs": {
+      "formato": "M.2",
+      "protocolo": "NVMe",
+      "capacidad": "2TB",
+      "consumo_watts": 7
+    }
+  },
+  {
+    "id": 13,
+    "nombre": "Corsair RM750e 750W 80 Plus Gold",
+    "categoria": "fuente_poder",
+    "precio": 180000,
+    "imagen": "images/componentes/psu_corsair_750w.jpg",
+    "specs": { "potencia_w": 750, "certificacion": "Gold", "consumo_watts": 0 }
+  },
+  {
+    "id": 14,
+    "nombre": "ADATA XPG Kyber 850W 80 Plus Gold",
+    "categoria": "fuente_poder",
+    "precio": 210000,
+    "imagen": "images/componentes/psu_adata_850w.jpg",
+    "specs": { "potencia_w": 850, "certificacion": "Gold", "consumo_watts": 0 }
+  },
+  {
+    "id": 15,
+    "nombre": "WD Blue 1TB HDD",
+    "categoria": "almacenamiento",
+    "precio": 55000,
+    "imagen": "images/componentes/hdd_wd_blue_1tb.jpg",
+    "specs": {
+      "formato": "SATA",
+      "protocolo": "SATA III",
+      "capacidad": "1TB",
+      "consumo_watts": 12
+    }
+  },
+  {
+    "id": 16,
+    "nombre": "Seagate Barracuda 2TB HDD",
+    "categoria": "almacenamiento",
+    "precio": 75000,
+
+    "imagen": "images/componentes/hdd_seagate_2tb.jpg",
+    "specs": {
+      "formato": "SATA",
+      "protocolo": "SATA III",
+      "capacidad": "2TB",
+      "consumo_watts": 15
+    }
+  },
+  {
+    "id": 17,
+    "nombre": "Intel Core i3-12100F",
+    "categoria": "procesador",
+    "precio": 115000,
+    "imagen": "images/componentes/intel_core_i3_12100f.jpg",
+    "specs": { "socket": "LGA1700", "graficos": false, "consumo_watts": 58 }
+  },
+  {
+    "id": 18,
+    "nombre": "AMD Ryzen 9 7950X",
+    "categoria": "procesador",
+    "precio": 950000,
+    "imagen": "images/componentes/amd_ryzen_9_7950x.jpg",
+    "specs": { "socket": "AM5", "graficos": true, "consumo_watts": 170 }
+  },
+  {
+    "id": 19,
+    "nombre": "Deepcool AK620 Zero Dark",
+    "categoria": "refrigeracion",
+    "precio": 110000,
+    "imagen": "images/componentes/deepcool_ak620_zero_dark.jpg",
+    "specs": {
+      "tipo": "Aire",
+      "altura_mm": 160,
+      "socket_compatible": ["AM4", "AM5", "LGA1700"],
+      "consumo_watts": 5
+    }
+  },
+  {
+    "id": 20,
+    "nombre": "Samsung 24\" Odyssey G3 LS24AG320",
+    "categoria": "monitor",
+    "precio": 230000,
+
+    "imagen": "images/componentes/monitor_samsung_odyssey_g3_ls24ag320.jpg",
+    "specs": {
+      "resolucion": "FHD (1920x1080)",
+      "tasa_refresco": "165Hz",
+      "panel": "VA",
+      "respuesta": "1ms (MPRT)"
+    }
+  },
+  {
+    "id": 21,
+    "nombre": "LG 27\" UltraGear 27GL650F-B IPS",
+    "categoria": "monitor",
+    "precio": 350000,
+    "imagen": "images/componentes/monitor_lg_ultragear_27gl650f.jpg",
+    "specs": {
+      "resolucion": "FHD (1920x1080)",
+      "tasa_refresco": "144Hz",
+      "panel": "IPS",
+      "respuesta": "1ms (MBR)"
+    }
+  },
+  {
+    "id": 22,
+    "nombre": "Corsair iCUE H150i Elite LCD XT",
+    "categoria": "refrigeracion",
+    "precio": 480000,
+    "imagen": "images/componentes/corsair_icue_h150i_elite.jpg",
+    "specs": {
+      "tipo": "Liquida",
+      "tamano_radiador": 360,
+      "socket_compatible": ["AM4", "AM5", "LGA1700"],
+      "consumo_watts": 10
+    }
+  },
+  {
+    "id": 23,
+    "nombre": "Zotac Gaming GeForce RTX 3060 Twin Edge 12GB",
+    "categoria": "tarjeta_grafica",
+    "precio": 390000,
+    "imagen": "images/componentes/zotac_rtx_3060_twin_edge.jpg",
+    "specs": {
+      "marca": "NVIDIA",
+      "vram_gb": 12,
+      "consumo_watts": 170,
+      "largo_mm": 224
+    }
+  },
+  {
+    "id": 24,
+    "nombre": "MSI GeForce RTX 4090 GAMING X TRIO 24GB",
+    "categoria": "tarjeta_grafica",
+    "precio": 2800000,
+    "imagen": "images/componentes/msi_rtx_4090_gaming_x_trio.jpg",
+    "specs": {
+      "marca": "NVIDIA",
+      "vram_gb": 24,
+      "consumo_watts": 450,
+      "largo_mm": 337
+    }
+  },
+  {
+    "id": 25,
+    "nombre": "ASRock Radeon RX 6700 XT Challenger D 12GB",
+    "categoria": "tarjeta_grafica",
+    "precio": 430000,
+    "oferta": true,
+    "imagen": "images/componentes/asrock_rx_6700_xt_challenger.jpg",
+    "specs": {
+      "marca": "AMD",
+      "vram_gb": 12,
+      "consumo_watts": 230,
+      "largo_mm": 269
+    }
+  },
+  {
+    "id": 26,
+    "nombre": "Gigabyte B450M DS3H WIFI",
+    "categoria": "placa_base",
+    "precio": 120000,
+    "imagen": "images/componentes/gigabyte_b450m_ds3h_wifi.jpg",
+    "specs": {
+      "socket": "AM4",
+      "tipo_memoria": "DDR4",
+      "formato": "mATX",
+      "cant_slots_m2": 1,
+      "cant_puertos_sata": 4,
+      "cant_slots_ram": 4
+    }
+  },
+  {
+    "id": 27,
+    "nombre": "ASUS ROG Maximus Z790 Hero",
+    "categoria": "placa_base",
+    "precio": 890000,
+    "imagen": "images/componentes/asus_rog_maximus_z790_hero.jpg",
+    "specs": {
+      "socket": "LGA1700",
+      "tipo_memoria": "DDR5",
+      "formato": "ATX",
+      "cant_slots_m2": 5,
+      "cant_puertos_sata": 6,
+      "cant_slots_ram": 4
+    }
+  },
+  {
+    "id": 28,
+    "nombre": "Corsair Dominator Platinum RGB 32GB (2x16GB) 6000MHz",
+    "categoria": "memoria_ram",
+    "precio": 250000,
+    "imagen": "images/componentes/corsair_dominator_platinum_ddr5.jpg",
+    "specs": {
+      "tipo": "DDR5",
+      "capacidad_gb": 32,
+      "velocidad_mhz": 6000,
+      "cantidad_modulos": 2
+    }
+  },
+  {
+    "id": 29,
+    "nombre": "Crucial BX500 480GB SATA SSD",
+    "categoria": "almacenamiento",
+    "precio": 45000,
+    "imagen": "images/componentes/ssd_crucial_bx500_480gb.jpg",
+    "specs": {
+      "formato": "SATA",
+      "protocolo": "SATA III",
+      "capacidad": "480GB",
+      "consumo_watts": 3
+    }
+  },
+  {
+    "id": 30,
+    "nombre": "ASUS TUF Gaming F15 FX506HF-HN002W",
+    "categoria": "notebook",
+    "precio": 1200000,
+    "oferta": true,
+    "imagen": "images/componentes/notebook_asus_tuf_f15_fx506hf.jpg",
+    "specs": {
+      "cpu": "Intel Core i5-11400H",
+      "gpu": "RTX 2050 4GB",
+      "ram": "16GB 3200MHz",
+      "pantalla": "15.6\" 144Hz"
+    }
+  },
+  {
+    "id": 31,
+    "nombre": "HP Victus 15-fb0103la Ryzen-5",
+    "categoria": "notebook",
+    "precio": 980000,
+    "imagen": "images/componentes/notebook_hp_victus_15_fb0103la.jpg",
+    "specs": {
+      "cpu": "AMD Ryzen 5 5600H",
+      "gpu": "RX 6500M 4GB",
+      "ram": "8GB 3200MHz",
+      "pantalla": "15.6\" FHD IPS"
+    }
+  },
+  {
+    "id": 32,
+    "nombre": "Samsung 970 EVO Plus 1TB NVMe",
+    "categoria": "almacenamiento",
+    "precio": 135000,
+    "imagen": "images/componentes/ssd_samsung_970_evo_plus.jpg",
+    "specs": {
+      "formato": "M.2",
+      "protocolo": "NVMe",
+      "capacidad": "1TB",
+      "consumo_watts": 6
+    }
+  },
+  {
+    "id": 33,
+    "nombre": "Thermaltake Toughpower GF1 850W Gold",
+    "categoria": "fuente_poder",
+    "precio": 200000,
+    "imagen": "images/componentes/psu_thermaltake_gf1_850w.jpg",
+    "specs": { "potencia_w": 850, "certificacion": "Gold", "consumo_watts": 0 }
+  },
+  {
+    "id": 34,
+    "nombre": "NZXT H5 Flow White",
+    "categoria": "gabinete",
+    "precio": 175000,
+    "imagen": "images/componentes/gabinete_nzxt_h5_flow_white.jpg",
+    "specs": {
+      "formato": "Mid Tower ATX",
+      "soporte_gpu": 365,
+      "max_altura_cooler": 165,
+      "max_radiador": 280
+    }
+  },
+  {
+    "id": 35,
+    "nombre": "Cooler Master Hyper 212 Halo Black",
+    "categoria": "refrigeracion",
+    "precio": 65000,
+    "oferta": true,
+    "imagen": "images/componentes/coolermaster_hyper_212_halo.jpg",
+    "specs": {
+      "tipo": "Aire",
+      "altura_mm": 154,
+      "socket_compatible": ["AM4", "AM5", "LGA1700"],
+      "consumo_watts": 4
+    }
+  },
+  {
+    "id": 36,
+    "nombre": "Logitech G Pro X Superlight Wireless",
+    "categoria": "periferico",
+    "precio": 190000,
+    "imagen": "images/componentes/mouse_logitech_g_pro_x_superlight.jpg",
+    "specs": {
+      "sensor": "HERO 25K",
+      "dpi": "25600",
+      "peso": "63g",
+      "conexion": "Inalámbrico Lightspeed"
+    }
+  },
+  {
+    "id": 37,
+    "nombre": "ASUS TUF Gaming B650-PLUS WIFI",
+    "categoria": "placa_base",
+    "precio": 285000,
+    "imagen": "images/componentes/asus_tuf_gaming_b650_plus.jpg",
+    "specs": {
+      "socket": "AM5",
+      "tipo_memoria": "DDR5",
+      "formato": "ATX",
+      "cant_slots_m2": 3,
+      "cant_puertos_sata": 4,
+      "cant_slots_ram": 4
+    }
+  },
+  {
+    "id": 38,
+    "nombre": "LG 34\" UltraWide 34WP500-B",
+    "categoria": "monitor",
+    "precio": 450000,
+    "imagen": "images/componentes/monitor_lg_ultrawide_34wp500.jpg",
+    "specs": {
+      "resolucion": "UW-FHD (2560x1080)",
+      "tasa_refresco": "75Hz",
+      "panel": "IPS",
+      "relacion": "21:9"
+    }
+  },
+  {
+    "id": 39,
+    "nombre": "Arctic MX-4 Pasta Térmica (4g)",
+    "categoria": "accesorio",
+    "precio": 15000,
+    "imagen": "images/componentes/pasta_termica_arctic_mx4.jpg",
+    "specs": { "peso": "4g", "conductividad": "8.5 W/mk" }
+  },
+  {
+    "id": 40,
+    "nombre": "Redragon Kumara K552-RGB (Switch Red)",
+    "categoria": "periferico",
+    "precio": 45000,
+    "imagen": "images/componentes/teclado_redragon_kumara_k552_rgb.jpg",
+    "specs": {
+      "tipo": "Mecánico TKL",
+      "switch": "Outemu Red",
+      "idioma": "Español Latino",
+      "iluminacion": "RGB Chroma"
+    }
+  },
+  {
+    "id": 41,
+    "nombre": "Logitech G203 Lightsync Black",
+    "categoria": "periferico",
+    "precio": 32000,
+
+    "imagen": "images/componentes/mouse_logitech_g203_lightsync.jpg",
+    "specs": {
+      "sensor": "Mercury",
+      "dpi": "8000",
+      "botones": "6 programables",
+      "iluminacion": "Lightsync RGB"
+    }
+  },
+  {
+    "id": 42,
+    "nombre": "Gigabyte P650B 650W 80 Plus Bronze",
+    "categoria": "fuente_poder",
+    "precio": 85000,
+    "imagen": "images/componentes/psu_gigabyte_p650b.jpg",
+    "specs": {
+      "potencia_w": 650,
+      "certificacion": "Bronze",
+      "consumo_watts": 0
+    }
+  },
+  {
+    "id": 43,
+    "nombre": "G.Skill Ripjaws V 16GB (2x8GB) 3600MHz",
+    "categoria": "memoria_ram",
+    "precio": 55000,
+    "imagen": "images/componentes/gskill_ripjaws_v_ddr4_16gb.jpg",
+    "specs": {
+      "tipo": "DDR4",
+      "capacidad_gb": 16,
+      "velocidad_mhz": 3600,
+      "cantidad_modulos": 2
+    }
+  },
+  {
+    "id": 44,
+    "nombre": "Sentey X10 RGB Acrylic",
+    "categoria": "gabinete",
+    "precio": 65000,
+    "imagen": "images/componentes/gabinete_sentey_x10.jpg",
+    "specs": {
+      "formato": "Mid Tower ATX",
+      "soporte_gpu": 340,
+      "max_altura_cooler": 160,
+      "max_radiador": 240
+    }
+  },
+  {
+    "id": 45,
+    "nombre": "MSI Ventus 2X GeForce RTX 3050 8GB",
+    "categoria": "tarjeta_grafica",
+    "precio": 290000,
+    "imagen": "images/componentes/msi_rtx_3050_ventus_2x.jpg",
+    "specs": {
+      "marca": "NVIDIA",
+      "vram_gb": 8,
+      "consumo_watts": 130,
+      "largo_mm": 235
+    }
+  },
+  {
+    "id": 46,
+    "nombre": "Patriot Viper Steel 8GB 3200MHz",
+    "categoria": "memoria_ram",
+    "precio": 28000,
+    "imagen": "images/componentes/patriot_viper_steel_ddr4_8gb.jpg",
+    "specs": {
+      "tipo": "DDR4",
+      "capacidad_gb": 8,
+      "velocidad_mhz": 3200,
+      "cantidad_modulos": 1
+    }
+  },
+  {
+    "id": 47,
+    "nombre": "ID-Cooling SE-903-XT",
+    "categoria": "refrigeracion",
+    "precio": 25000,
+    "imagen": "images/componentes/id_cooling_se_903_xt.jpg",
+    "specs": {
+      "tipo": "Aire",
+      "altura_mm": 130,
+      "socket_compatible": ["AM4", "LGA1200", "LGA1700"],
+      "consumo_watts": 3
+    }
+  },
+  {
+    "id": 48,
+    "nombre": "ViewSonic 24\" OMNI VX2418-P-MHD",
+    "categoria": "monitor",
+    "precio": 210000,
+    "imagen": "images/componentes/monitor_viewsonic_vx2418.jpg",
+    "specs": {
+      "resolucion": "FHD (1920x1080)",
+      "tasa_refresco": "165Hz",
+      "panel": "VA",
+      "respuesta": "1ms"
+    }
+  },
+  {
+    "id": 49,
+    "nombre": "HyperX Pulsefire Haste Wireless",
+    "categoria": "periferico",
+    "precio": 95000,
+
+    "imagen": "images/componentes/mouse_hyperx_pulsefire_haste.jpg",
+    "specs": {
+      "sensor": "Pixart 3335",
+      "dpi": "16000",
+      "peso": "61g",
+      "conexion": "Inalámbrico/Cable"
+    }
+  },
+  {
+    "id": 50,
+    "nombre": "Corsair 4000D Airflow Tempered Glass Black",
+    "categoria": "gabinete",
+    "precio": 160000,
+    "imagen": "images/componentes/gabinete_corsair_4000d_airflow_black.jpg",
+    "specs": {
+      "formato": "Mid Tower ATX",
+      "soporte_gpu": 360,
+      "max_altura_cooler": 170,
+      "max_radiador": 360
+    }
+  },
+  {
+    "id": 51,
+    "nombre": "Antec DF700 FLUX ARGB Mesh White",
+    "categoria": "gabinete",
+    "precio": 185000,
+    "oferta": true,
+    "imagen": "images/componentes/gabinete_antec_df700_flux.jpg",
+    "specs": {
+      "formato": "Mid Tower ATX",
+      "soporte_gpu": 405,
+      "max_altura_cooler": 175,
+      "max_radiador": 360
+    }
+  },
+  {
+    "id": 52,
+    "nombre": "AMD Ryzen 7 5700X3D",
+    "categoria": "procesador",
+    "precio": 380000,
+    "imagen": "images/componentes/amd_ryzen_7_5700x3d.jpg",
+    "specs": { "socket": "AM4", "graficos": false, "consumo_watts": 105 }
+  },
+  {
+    "id": 53,
+    "nombre": "NVIDIA GeForce RTX 4070 Super Founders Edition",
+    "categoria": "tarjeta_grafica",
+    "precio": 950000,
+    "imagen": "images/componentes/nvidia_rtx_4070_super_fe.jpg",
+    "specs": {
+      "marca": "NVIDIA",
+      "vram_gb": 12,
+      "consumo_watts": 220,
+      "largo_mm": 244
+    }
+  },
+  {
+    "id": 54,
+    "nombre": "Gigabyte B550 AORUS ELITE V2",
+    "categoria": "placa_base",
+    "precio": 230000,
+    "imagen": "images/componentes/gigabyte_b550_aorus_elite_v2.jpg",
+    "specs": {
+      "socket": "AM4",
+      "tipo_memoria": "DDR4",
+      "formato": "ATX",
+      "cant_slots_m2": 2,
+      "cant_puertos_sata": 4,
+      "cant_slots_ram": 4
+    }
+  },
+  {
+    "id": 55,
+    "nombre": "Intel Core i5-13600KF",
+    "categoria": "procesador",
+    "precio": 410000,
+    "imagen": "images/componentes/intel_core_i5_13600kf.jpg",
+    "specs": { "socket": "LGA1700", "graficos": false, "consumo_watts": 125 }
+  },
+  {
+    "id": 56,
+    "nombre": "Sapphire Pulse AMD Radeon RX 7900 XT 20GB",
+    "categoria": "tarjeta_grafica",
+    "precio": 1400000,
+    "imagen": "images/componentes/sapphire_pulse_rx_7900_xt.jpg",
+    "specs": {
+      "marca": "AMD",
+      "vram_gb": 20,
+      "consumo_watts": 315,
+      "largo_mm": 313
+    }
+  },
+  {
+    "id": 57,
+    "nombre": "Thermalright Peerless Assassin 120 SE",
+    "categoria": "refrigeracion",
+    "precio": 75000,
+
+    "imagen": "images/componentes/thermalright_peerless_assassin_120_se.jpg",
+    "specs": {
+      "tipo": "Aire",
+      "altura_mm": 155,
+      "socket_compatible": ["AM4", "AM5", "LGA1700"],
+      "consumo_watts": 5
+    }
+  },
+  {
+    "id": 58,
+    "nombre": "Kingston Fury Renegade 2TB NVMe Gen4",
+    "categoria": "almacenamiento",
+    "precio": 240000,
+    "imagen": "images/componentes/ssd_kingston_fury_renegade_2tb.jpg",
+    "specs": {
+      "formato": "M.2",
+      "protocolo": "NVMe",
+      "capacidad": "2TB",
+      "consumo_watts": 7
+    }
+  },
+  {
+    "id": 59,
+    "nombre": "Corsair RM1000x Shift 1000W 80 Plus Gold",
+    "categoria": "fuente_poder",
+    "precio": 320000,
+    "imagen": "images/componentes/psu_corsair_rm1000x_shift.jpg",
+    "specs": { "potencia_w": 1000, "certificacion": "Gold", "consumo_watts": 0 }
+  },
+  {
+    "id": 60,
+    "nombre": "HYTE Y60 White/Black Glass",
+    "categoria": "gabinete",
+    "precio": 350000,
+    "imagen": "images/componentes/gabinete_hyte_y60.jpg",
+    "specs": {
+      "formato": "Mid Tower ATX",
+      "soporte_gpu": 375,
+      "max_altura_cooler": 160,
+      "max_radiador": 360
+    }
+  },
+  {
+    "id": 61,
+    "nombre": "ASUS ROG Strix X670E-E Gaming WiFi",
+    "categoria": "placa_base",
+    "precio": 780000,
+    "imagen": "images/componentes/asus_rog_strix_x670e_e.jpg",
+    "specs": {
+      "socket": "AM5",
+      "tipo_memoria": "DDR5",
+      "formato": "ATX",
+      "cant_slots_m2": 4,
+      "cant_puertos_sata": 4,
+      "cant_slots_ram": 4
+    }
+  },
+  {
+    "id": 62,
+    "nombre": "G.Skill Trident Z5 Neo RGB 64GB (2x32GB) 6000MHz",
+    "categoria": "memoria_ram",
+    "precio": 380000,
+    "imagen": "images/componentes/gskill_trident_z5_neo_64gb.jpg",
+    "specs": {
+      "tipo": "DDR5",
+      "capacidad_gb": 64,
+      "velocidad_mhz": 6000,
+      "cantidad_modulos": 2
+    }
+  },
+  {
+    "id": 63,
+    "nombre": "MSI Spatium M450 1TB NVMe Gen4",
+    "categoria": "almacenamiento",
+    "precio": 95000,
+    "imagen": "images/componentes/ssd_msi_spatium_m450_1tb.jpg",
+    "specs": {
+      "formato": "M.2",
+      "protocolo": "NVMe",
+      "capacidad": "1TB",
+      "consumo_watts": 4
+    }
+  },
+  {
+    "id": 64,
+    "nombre": "Lian Li Galahad II Trinity SL-INF 360 White",
+    "categoria": "refrigeracion",
+    "precio": 390000,
+    "imagen": "images/componentes/lian_li_galahad_ii_trinity_360.jpg",
+    "specs": {
+      "tipo": "Liquida",
+      "tamano_radiador": 360,
+      "socket_compatible": ["AM5", "LGA1700"],
+      "consumo_watts": 12
+    }
+  },
+  {
+    "id": 65,
+    "nombre": "Intel Arc A770 Phantom Gaming 16GB",
+    "categoria": "tarjeta_grafica",
+    "precio": 480000,
+    "imagen": "images/componentes/asrock_intel_arc_a770_phantom.jpg",
+    "specs": {
+      "marca": "Intel",
+      "vram_gb": 16,
+      "consumo_watts": 225,
+      "largo_mm": 305
+    }
+  },
+  {
+    "id": 66,
+    "nombre": "Logitech G502 X Plus Wireless White",
+    "categoria": "periferico",
+    "precio": 210000,
+    "imagen": "images/componentes/mouse_logitech_g502_x_plus_white.jpg",
+    "specs": {
+      "sensor": "HERO 25K",
+      "dpi": "25600",
+      "peso": "106g",
+      "conexion": "Inalámbrico Lightspeed"
+    }
+  },
+  {
+    "id": 67,
+    "nombre": "Corsair 5000D Airflow Black",
+    "categoria": "gabinete",
+    "precio": 260000,
+    "imagen": "images/componentes/gabinete_corsair_5000d_airflow.jpg",
+    "specs": {
+      "formato": "Mid Tower ATX",
+      "soporte_gpu": 400,
+      "max_altura_cooler": 170,
+      "max_radiador": 360
+    }
+  },
+  {
+    "id": 68,
+    "nombre": "ASUS TUF Gaming VG27AQ 27\" 1440p 165Hz",
+    "categoria": "monitor",
+    "precio": 550000,
+    "imagen": "images/componentes/monitor_asus_tuf_vg27aq.jpg",
+    "specs": {
+      "resolucion": "QHD (2560x1440)",
+      "tasa_refresco": "165Hz",
+      "panel": "IPS",
+      "respuesta": "1ms"
+    }
+  },
+  {
+    "id": 69,
+    "nombre": "Be Quiet! Dark Rock Pro 5",
+    "categoria": "refrigeracion",
+    "precio": 160000,
+    "imagen": "images/componentes/be_quiet_dark_rock_pro_5.jpg",
+    "specs": {
+      "tipo": "Aire",
+      "altura_mm": 168,
+      "socket_compatible": ["AM5", "LGA1700"],
+      "consumo_watts": 6
+    }
+  },
+  {
+    "id": 70,
+    "nombre": "Keychron Q1 Pro Wireless Mechanical Keyboard",
+    "categoria": "periferico",
+    "precio": 320000,
+    "imagen": "images/componentes/teclado_keychron_q1_pro.jpg",
+    "specs": {
+      "tipo": "Mecánico 75%",
+      "switch": "Gateron Brown",
+      "idioma": "Inglés ANSI",
+      "iluminacion": "RGB Sur"
+    }
+  },
+  {
+    "id": 71,
+    "nombre": "AMD Ryzen 5 8600G",
+    "categoria": "procesador",
+    "precio": 340000,
+    "imagen": "images/componentes/amd_ryzen_5_8600g.jpg",
+    "specs": { "socket": "AM5", "graficos": true, "consumo_watts": 65 }
+  },
+  {
+    "id": 72,
+    "nombre": "MSI MPG B650I EDGE WIFI",
+    "categoria": "placa_base",
+    "precio": 360000,
+    "imagen": "images/componentes/msi_mpg_b650i_edge.jpg",
+    "specs": {
+      "socket": "AM5",
+      "tipo_memoria": "DDR5",
+      "formato": "Mini-ITX",
+      "cant_slots_m2": 2,
+      "cant_puertos_sata": 2,
+      "cant_slots_ram": 2
+    }
+  },
+  {
+    "id": 73,
+    "nombre": "Cooler Master V850 SFX Gold",
+    "categoria": "fuente_poder",
+    "precio": 220000,
+    "imagen": "images/componentes/psu_coolermaster_v850_sfx.jpg",
+    "specs": { "potencia_w": 850, "certificacion": "Gold", "consumo_watts": 0 }
+  },
+  {
+    "id": 74,
+    "nombre": "Cooler Master NR200P White",
+    "categoria": "gabinete",
+    "precio": 140000,
+    "imagen": "images/componentes/gabinete_coolermaster_nr200p_white.jpg",
+    "specs": {
+      "formato": "Mini-ITX",
+      "soporte_gpu": 330,
+      "max_altura_cooler": 153,
+      "max_radiador": 280
+    }
+  },
+  {
+    "id": 75,
+    "nombre": "Alienware AW3423DWF QD-OLED",
+    "categoria": "monitor",
+    "precio": 1800000,
+    "imagen": "images/componentes/monitor_alienware_aw3423dwf.jpg",
+    "specs": {
+      "resolucion": "UW-QHD (3440x1440)",
+      "tasa_refresco": "165Hz",
+      "panel": "QD-OLED",
+      "respuesta": "0.1ms"
+    }
+  },
+  {
+    "id": 76,
+    "nombre": "Razer BlackShark V2 Pro Wireless White",
+    "categoria": "periferico",
+    "precio": 240000,
+    "imagen": "images/componentes/headset_razer_blackshark_v2_pro.jpg",
+    "specs": {
+      "tipo": "Headset",
+      "conexion": "Inalámbrico HyperSpeed",
+      "drivers": "50mm",
+      "micrófono": "Desmontable"
+    }
+  }
+]

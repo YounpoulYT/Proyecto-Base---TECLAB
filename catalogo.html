@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Catálogo - HardTec Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script defer src="js/catalogo.js"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="index.html" class="logo">HardTec 🚀</a>
+            
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                
+                <div class="dropdown-container">
+                    <a href="catalogo.html" class="active" style="cursor: pointer;">Productos ▾</a>
+                    <div class="dropdown-menu">
+                        <a href="catalogo.html?filtro=todos">Ver Todo</a>
+                        <a href="catalogo.html?filtro=procesador">Procesadores</a>
+                        <a href="catalogo.html?filtro=placa_base">Mothers</a>
+                        <a href="catalogo.html?filtro=tarjeta_grafica">Video</a>
+                        <a href="catalogo.html?filtro=memoria_ram">RAM</a>
+                        <a href="catalogo.html?filtro=almacenamiento">Almacenamiento</a>
+                        <a href="catalogo.html?filtro=notebook">Notebooks</a>
+                    </div>
+                </div>
+
+                <a href="armador.html" class="highlight">🛠️ Armá tu PC</a>
+                <a href="checkout.html" class="cart-icon">🛒 <span id="cart-count">0</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        
+        <div class="header-catalogo" style="margin: 30px 0; border-bottom: 2px solid #e1e1e1; padding-bottom: 10px;">
+            <h2 style="margin:0; color:#333;">Catálogo de Productos</h2>
+            <p style="color:#777; margin:0;">Encontrá el hardware ideal para tu setup.</p>
+        </div>
+
+        <div class="layout-catalogo">
+            
+            <aside class="sidebar-filtros">
+                
+                <div class="filtro-header">
+                    <h3>Filtros</h3>
+                    <button class="button button-clear button-small" onclick="borrarFiltros()" style="color: #9b4dca; padding:0; height:auto;">
+                        Borrar Todo ✕
+                    </button>
+                </div>
+
+                <div class="filtro-grupo">
+                    <span class="filtro-titulo">Categoría</span>
+                    <select id="select-categoria" onchange="cambiarCategoria(this.value)">
+                        <option value="todos">Ver Todas</option>
+                        <option value="procesador">Procesadores</option>
+                        <option value="placa_base">Mothers</option>
+                        <option value="memoria_ram">Memorias RAM</option>
+                        <option value="tarjeta_grafica">Placas de Video</option>
+                        <option value="almacenamiento">Almacenamiento</option>
+                        <option value="fuente_poder">Fuentes</option>
+                        <option value="gabinete">Gabinetes</option>
+                        <option value="monitor">Monitores</option>
+                        <option value="notebook">Notebooks</option>
+                        <option value="periferico">Periféricos</option>
+                        <option value="refrigeracion">Refrigeración</option>
+                    </select>
+                </div>
+
+                <div class="filtro-grupo">
+                    <span class="filtro-titulo">Precio</span>
+                    <div class="rango-slider" style="margin-bottom: 25px;">
+                        <input type="range" id="range-min" min="0" max="2000000" step="10000" value="0">
+                        <input type="range" id="range-max" min="0" max="2000000" step="10000" value="2000000">
+                    </div>
+                    <div class="precio-inputs">
+                        <div class="precio-field">
+                            <span>Min $</span>
+                            <input type="number" id="input-min" value="0">
+                        </div>
+                        <div class="precio-field">
+                            <span>Max $</span>
+                            <input type="number" id="input-max" value="2000000">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="filtros-dinamicos">
+                    </div>
+
+                <div class="filtro-grupo" style="border-bottom: none; margin-top: 20px;">
+                    <span class="filtro-titulo">Marcas</span>
+                    <div id="contenedor-marcas" class="lista-filtros" style="max-height: 200px; overflow-y: auto;">
+                        <p style="color:#aaa; font-size:0.8rem;">Cargando...</p>
+                    </div>
+                </div>
+
+            </aside>
+
+            <div class="contenido-productos">
+                <div class="info-resultados" style="margin-bottom: 20px; display:flex; justify-content:space-between; align-items:center;">
+                    <span id="cantidad-resultados" style="font-weight: bold; color: #666;">Cargando productos...</span>
+                    </div>
+                
+                <div class="container" id="productos-container">
+                    </div>
+            </div>
+
+        </div> 
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Sobre HardTec</h4>
+                <p>Especialistas en Hardware Gaming y Workstations de alto rendimiento.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Ayuda</h4>
+                <ul>
+                    <li><a href="#">Política de Envíos</a></li>
+                    <li><a href="#">Garantía y Devoluciones</a></li>
+                    <li><a href="#">Medios de Pago</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p>📞 0810-555-HARD</p>
+                <p>✉️ ventas@hardtec.com.ar</p>
+                <p>📍 Buenos Aires, Argentina</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 HardTec Store. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

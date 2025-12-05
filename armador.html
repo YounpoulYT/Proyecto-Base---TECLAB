@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Armador de PC - HardTec</title>
+    <link rel="icon" href="images/icon-fruits-64.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/armador.js"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="index.html" class="logo">
+                <img src="images/Home/Gemini_Generated_Image_13h98u13h98u13h9.png" alt="HardTec Logo" class="logo-img">
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                
+                <div class="dropdown-container">
+                    <a href="catalogo.html" style="cursor: pointer;">Productos ▾</a>
+                    <div class="dropdown-menu">
+                        <a href="catalogo.html?filtro=todos">Ver Todo</a>
+                        <a href="catalogo.html?filtro=procesador">Procesadores</a>
+                        <a href="catalogo.html?filtro=placa_base">Mothers</a>
+                        <a href="catalogo.html?filtro=tarjeta_grafica">Video</a>
+                        <a href="catalogo.html?filtro=memoria_ram">RAM</a>
+                        <a href="catalogo.html?filtro=almacenamiento">Almacenamiento</a>
+                        <a href="catalogo.html?filtro=notebook">Notebooks</a>
+                    </div>
+                </div>
+
+                <a href="armador.html" class="active highlight">🛠️ Armá tu PC</a>
+                <a href="checkout.html" class="cart-icon">🛒 <span id="cart-count">0</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div id="barra-navegacion" class="navegacion-pasos">
+            <button id="btn-anterior" class="button button-outline" onclick="irPasoAnterior()">⬅ Volver</button>
+            <h3 id="titulo-paso" style="margin:0;">Paso 1: Procesador</h3>
+            <button id="btn-saltar" class="button button-clear" onclick="saltarPaso()">Saltar este paso ➡</button>
+        </div>
+
+        <div class="layout-armador">
+            
+            <div class="container" id="productos-container">
+                </div>
+
+            <aside class="resumen-armado">
+                <h3>Tu Configuración 🛠️</h3>
+                
+                <div id="lista-seleccionados">
+                    <p>Aún no has seleccionado componentes.</p>
+                </div>
+                
+                <hr>
+                
+                <div class="total-precio">
+                    <h4>Total: <span id="precio-total">$0</span></h4>
+                    <p style="color: #666; font-size: 0.9rem;">
+                        ⚡ Consumo estimado: <span id="consumo-total">0</span>W
+                    </p>
+                </div>
+                
+                <button id="btn-finalizar" class="button button-outline" disabled onclick="finalizarArmado()">
+                    Confirmar Armado
+                </button>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Sobre HardTec</h4>
+                <p>Líderes en hardware y armado de PCs.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Ayuda</h4>
+                <ul>
+                    <li><a href="#">Envíos</a></li>
+                    <li><a href="#">Garantía</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p>📞 0810-555-HARD</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 HardTec Store.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
